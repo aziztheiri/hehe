@@ -1,0 +1,6 @@
+<html>
+<h1>Cliquer pour modifier un patient </h1>
+{% for patient in patients %}
+  <p><a href="{{path('patient_edit',{'id':patient.id})}}"> {{patient.name}} - {{patient.illness}}</p></a>
+  {% endfor %}
+</html>
